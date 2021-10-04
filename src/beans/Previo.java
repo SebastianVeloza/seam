@@ -18,7 +18,7 @@ public class Previo {
 	public void setPeso(int peso) {
 		this.peso = peso;
 	}
-	s
+	
 	
 	
 
