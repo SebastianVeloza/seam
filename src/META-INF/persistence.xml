@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="seam" transaction-type="RESOURCE_LOCAL">
+		<class>entidades.Arista</class>
+		<class>entidades.Convenio</class>
+		<class>entidades.Conveniohospital</class>
+		<class>entidades.Hospital</class>
+		<class>entidades.Nodo</class>
+		<class>entidades.Paciente</class>
+		<properties>
+			<property name="eclipselink.jdbc.batch-writing" value="None"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_seam"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="123456789"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="eclipselink.allow-zero-id" value="true"/>
+		</properties>
+	</persistence-unit>
+</persistence>
